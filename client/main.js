@@ -1,1 +1,1 @@
-Meteor.subscribe('items');
+Meteor.subscribe('items','Shirt');

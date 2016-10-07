@@ -1,4 +1,4 @@
 Template.itemList.helpers({
   items: function() {
-    return Items.find(); }
+    return Items.find({designer:'Decko Car'}); }
 });
