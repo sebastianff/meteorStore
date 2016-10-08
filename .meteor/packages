@@ -24,3 +24,6 @@ underscore
 iron:router
 sacha:spin
 session
+accounts-base
+accounts-password
+accounts-ui
