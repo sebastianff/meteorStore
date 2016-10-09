@@ -1,5 +1,23 @@
 <template name="editPage">
-	<img src={{url}} height="500px" width="500px" alt="..." class="img-rounded">
-		<h1>{{title}}</h1>
-		<p>This is the edit page</p>
+	<form class="form-horizontal">
+	  <div class="form-group">
+	    <label for="itemName">Item</label>
+	    <input type="text" class="form-control" id="itemName" value="{{title}}">
+	  </div>
+	  <div class="form-group">
+	    <label for="itemDesigner">Designer</label>
+	    <input type="text" class="form-control" id="itemDesigner" value="{{designer}}">
+	  </div>
+	  <div class="form-group">
+	    <label for="itemPrice">Price</label>
+	    <input type="text" class="form-control" id="itemPrice" value="{{price}}">
+	  </div>
+	  <div class="form-group">
+	    <label for="itemPhoto">Photo</label>
+	    <img src={{url}} height="200px" width="200px" alt="..." class="img-rounded">
+	    <input type="text" class="form-control" id="itemPhoto" value="{{url}}">
+	  </div>
+	  <button class="btn delete">Delete</button>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
 </template>
